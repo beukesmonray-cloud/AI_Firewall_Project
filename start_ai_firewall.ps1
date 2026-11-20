@@ -9,7 +9,7 @@ foreach ($profile in $profiles) {
     }
 }
 
-$auditSubcategoryGuid = '0CCE9226-69AE-11D9-BED3-505054503030'
+$auditSubcategoryGuid = '{0CCE9226-69AE-11D9-BED3-505054503030}'
 $auditOutput = & auditpol.exe /get /subcategory:$auditSubcategoryGuid /r
 if ($LASTEXITCODE -ne 0) {
     throw 'Could not verify Filtering Platform Connection success auditing.'

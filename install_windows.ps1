@@ -7,7 +7,7 @@ $backupDirectory = Join-Path $env:ProgramData 'AI_Firewall_Project'
 $backupPath = Join-Path $backupDirectory 'firewall-profile-backup.json'
 $loggingBackupPath = Join-Path $backupDirectory 'firewall-logging-backup.json'
 $auditBackupPath = Join-Path $backupDirectory 'connection-audit-backup.json'
-$auditSubcategoryGuid = '0CCE9226-69AE-11D9-BED3-505054503030'
+$auditSubcategoryGuid = '{0CCE9226-69AE-11D9-BED3-505054503030}'
 
 function Get-ConnectionAuditState {
     $output = & auditpol.exe /get /subcategory:$auditSubcategoryGuid /r
